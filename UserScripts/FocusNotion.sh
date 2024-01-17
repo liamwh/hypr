@@ -26,5 +26,5 @@ if [ "$NUM_WINDOWS" -gt 0 ]; then
     fi
 else
     # Open a new instance of Notion if it's not open.
-    /usr/lib/electron28/electron /usr/lib/notion-app %
+    /usr/lib/electron28/electron /usr/lib/notion-app
 fi
