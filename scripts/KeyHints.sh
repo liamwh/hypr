@@ -25,8 +25,8 @@ dynamic_height=$((height * percentage_height / 100))
 
 # Limit width and height to maximum values
 dynamic_width=$(($dynamic_width > $max_width ? $max_width : $dynamic_width))
-dynamic_height=$(($dynamic_height > $max_height ? $max_height : $dynamic_height))
 
+dynamic_height=$(($dynamic_height > $max_height ? $max_height : $dynamic_height))
 # Launch yad with calculated width and height
 yad --width=$dynamic_width --height=$dynamic_height \
     --center \
@@ -62,8 +62,11 @@ yad --width=$dynamic_width --height=$dynamic_height \
 " ALT L" "Toggle Dwindle | Master Layout" "Hyprland Layout" \
 " Shift F" "Toggle float" "single window" \
 " ALT F" "Toggle all windows to float" "all windows" \
-" Shift B" "Toggle Blur" "normal or less blur" \
+# " Shift B" "Toggle Blur" "normal or less blur" \
 " SHIFT G" "Gamemode! All animations OFF or ON" "toggle" \
+" HYPERKEY+N" "Open or focus Notion" "" \
+" HYPERKEY+S" "Open or focus Wezterm" "" \
+" HYPERKEY+A" "Open or focus Chrome" "" \
 " H" "Launch this app" "" \
 " E" "View or EDIT Keybinds, Settings, Monitor" "" \
 "" "" "" \
