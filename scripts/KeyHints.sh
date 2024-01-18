@@ -63,7 +63,7 @@ yad --width=$dynamic_width --height=$dynamic_height \
 " Shift F" "Toggle float" "single window" \
 " ALT F" "Toggle all windows to float" "all windows" \
 # " Shift B" "Toggle Blur" "normal or less blur" \
-" SHIFT G" "Gamemode! All animations OFF or ON" "toggle" \
+" SHIFT Z" "Zen mode. Enables or diables animations" "toggle" \
 " HYPERKEY+N" "Open or focus Notion" "" \
 " HYPERKEY+S" "Open or focus Wezterm" "" \
 " HYPERKEY+A" "Open or focus Chrome" "" \
