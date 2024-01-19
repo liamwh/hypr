@@ -62,7 +62,7 @@ yad --width=$dynamic_width --height=$dynamic_height \
 " ALT L" "Toggle Dwindle | Master Layout" "Hyprland Layout" \
 " Shift F" "Toggle float" "single window" \
 " ALT F" "Toggle all windows to float" "all windows" \
-# " Shift B" "Toggle Blur" "normal or less blur" \
+" ALT E" "Emoji Picker" "rofi emoji" \
 " SHIFT Z" "Zen mode. Enables or diables animations" "toggle" \
 " HYPERKEY+N" "Open or focus Notion" "" \
 " HYPERKEY+S" "Open or focus Wezterm" "" \
@@ -72,5 +72,4 @@ yad --width=$dynamic_width --height=$dynamic_height \
 "" "" "" \
 "More tips:" "https://github.com/JaKooLit/Hyprland-Dots/wiki" ""\
 
-
-
+# " Shift B" "Toggle Blur" "normal or less blur" \
