@@ -26,5 +26,5 @@ if [ "$NUM_WINDOWS" -gt 0 ]; then
     fi
 else
     # Open a new instance of WhatsApp if it's not open.
-    /usr/lib/electron27/electron /usr/lib/bitwarden/app.asar
+    /usr/lib/electron27/electron --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=WaylandWindowDecorations /usr/lib/bitwarden/app.asar
 fi
