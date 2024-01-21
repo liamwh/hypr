@@ -1,10 +1,10 @@
 #!/bin/bash
 
-CLIENT_NAME="Google-chrome"
+CLIENT_NAME="google-chrome"
 CLIENTS=$(hyprctl clients -j)
 
-# Make sure to wrap $CLIENT_NAME in double quotes inside the jq query
-OPEN_WINDOWS_FOR_THIS_CLIENT=$(echo "$CLIENTS" | jq "[.[] | select(.class == \"$CLIENT_NAME\")]")
+# Convert .class to lowercase and compare with lowercase CLIENT_NAME inside the jq query
+OPEN_WINDOWS_FOR_THIS_CLIENT=$(echo "$CLIENTS" | jq "[.[] | select(.class | ascii_downcase == \"$CLIENT_NAME\")]")
 
 NUM_WINDOWS=$(echo $OPEN_WINDOWS_FOR_THIS_CLIENT | jq length)
 
