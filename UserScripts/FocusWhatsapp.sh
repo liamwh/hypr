@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CLIENT_NAME="whatsapp-for-linux"
+CLIENT_NAME="chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default"
 CLIENTS=$(hyprctl clients -j)
 
 # Make sure to wrap $CLIENT_NAME in double quotes inside the jq query
@@ -26,5 +26,5 @@ if [ "$NUM_WINDOWS" -gt 0 ]; then
     fi
 else
     # Open a new instance of WhatsApp if it's not open.
-    whatsapp-for-linux &> /dev/null &
+    /opt/google/chrome/chrome --profile-directory=Default --app-id=hnpfjngllnobngcgfapefoaidbinmjnm &> /dev/null &
 fi
