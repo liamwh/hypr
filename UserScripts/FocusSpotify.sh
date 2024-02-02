@@ -25,6 +25,6 @@ if [ "$NUM_WINDOWS" -gt 0 ]; then
         fi
     fi
 else
-    # Open a new instance of Chrome if it's not open.
-    wezterm &> /dev/null &
+    # Open a new instance of Spotify if it's not open.
+    spotify-launcher &> /dev/null &
 fi
